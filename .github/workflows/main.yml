@@ -24,4 +24,4 @@ jobs:
     - 
       name: Build
       run: |
-        docker build . -t pfremm:auto-southwest-check-in-docker --push
+        docker build . -t pfremm:auto-southwest-check-in-docker --output=registry
