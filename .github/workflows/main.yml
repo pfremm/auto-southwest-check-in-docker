@@ -17,7 +17,7 @@ jobs:
       with:
         config-inline: |
           [worker.oci]
-              platforms = [ "linux/arm64" ]
+              platforms = [ "linux/amd64", "linux/arm64"  ]
     - 
       name: Docker login
       run: echo ${{ secrets.DOCKER_HUB }} | docker login -u pfremm --password-stdin              
