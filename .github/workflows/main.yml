@@ -21,5 +21,4 @@ jobs:
     - 
       name: Build
       run: |
-        pwd
-        ls -la
+        docker build . -t pfremm:auto-southwest-check-in-docker
