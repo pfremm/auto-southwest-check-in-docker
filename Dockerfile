@@ -1,6 +1,6 @@
 FROM python
 
-RUN apt-get -y update && apt-get install -y zsh chromium chromium-driver vim git patch
+RUN apt-get -y update && apt-get install -y zsh chromium chromium-driver vim git
 RUN git clone https://github.com/jdholtz/auto-southwest-check-in.git
 
 WORKDIR /auto-southwest-check-in
