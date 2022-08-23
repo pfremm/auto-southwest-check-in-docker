@@ -16,4 +16,5 @@ jobs:
               platforms = [ "linux/amd64", "linux/arm64" ]
     - name: Build
       run: |
-          docker build . --file ../Dockerfile --tag pfremm:auto-southwest-check-in-docker
+        pwd
+        ls -la
