@@ -16,4 +16,7 @@ jobs:
               platforms = [ "linux/amd64", "linux/arm64" ]
     - name: Build
       run: |
-          docker build . # will run buildx
+            docker buildx build \
+            --platform linux/arm64 \
+            --output "type=image" \
+            --tag $GITHUB_REPOSITORY:arm64 .
