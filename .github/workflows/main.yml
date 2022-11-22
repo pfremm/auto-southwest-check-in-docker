@@ -2,6 +2,8 @@ name: ci
 
 on:
   push:
+  schedule:
+    - cron: "0 9 * * TUE"
 
 jobs:
   buildx:
