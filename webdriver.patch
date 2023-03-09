@@ -1,5 +1,5 @@
-44c44
-<         driver = Chrome(options=self.options, seleniumwire_options=self.seleniumwire_options)
+126c126
+<         version_main=chrome_version,
 ---
->         driver = Chrome(options=self.options, seleniumwire_options=self.seleniumwire_options, driver_executable_path="/usr/bin/chromedriver")
+>         version_main=chrome_version, driver_executable_path="/usr/bin/chromedriver"
 
